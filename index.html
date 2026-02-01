@@ -1,32 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Peter Chang</title>
-    <link rel="stylesheet" href="/styles.css"> 
+    <link rel="stylesheet" href="/styles.css">
+    <script src="https://kit.fontawesome.com/ad6061a78a.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
     <section id="about-me">
         <nav>
-            <div class="personal__logo">Peter Chang</div>
+            <div class="personal__logo"><img src="assets/myLogo.png" alt="Peter Chang"></div>
             <ul class="nav__link--list">
-                <li>
-                    <a href="" class="
+                <li class="nav__link">
+                    <a href="#languages" class="
                         nav__link--anchor
                         link__hover-effect
                         link__hover-effect--black
                     ">Languages</a>
                 </li>
                 <li>
-                    <a href="" class="
+                    <a href="#" class="
                         nav__link--anchor
                         link__hover-effect
                         link__hover-effect--black
                     ">Project</a>
                 </li>
                 <li>
-                    <a href="" class="
+                    <a href="#" class="
                         nav__link--anchor
                         nav__link--anchor-primary
                     ">Contact</a>
@@ -40,14 +43,225 @@
                         <img src="assets/1689663346797.jpeg" class="about-me__picture" alt="Peter Chang!">
                     </figure>
                     <h1 class="about-me__info--title">
-                        Hello nice to meet you!  I am <span class="text--purple">Peter Chang🤜🤛</span>
+                        Hello nice to meet you!<br>I am <span class="text--purple">Peter Chang🤜🤛</span>
                     </h1>
                     <p class="about-me__info--para">
-                        I am a <strong class="text--purple">frontend web developer</strong> with a strong background in graphic design and brand identity. I am passionate about building responsive, high-performance web applications that deliver seamless user experiences and elevate modern web design.
+                        I am a <strong class="text--blue">frontend web developer</strong> with a strong background in
+                        graphic design and brand identity. I am passionate about building responsive, high-performance
+                        web applications that deliver seamless user experiences and elevate modern web design.
                     </p>
+                    <div class="about-me__links">
+                        <a href="" class="about-me__link"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="" class="about-me__link"><i class="fa-brands fa-github"></i></a>
+                        <a href="" class="about-me__link"><i class="fa-solid fa-at"></i></a>
+                        <a href="" class="about-me__link"><i class="fa-sharp fa-solid fa-file-pdf"></i></a>
+                    </div>
                 </div>
+                <figure class="about-me__img--container">
+                    <img src="assets/undraw_programming_j1zw.svg" class="about-me__img" alt="Peter Chang web designer">
+                </figure>
             </div>
         </div>
     </section>
+    <section id="languages">
+        <div class="container">
+            <div class="row">
+                <h1 class="section__title">This is my <strong class="text--blue">technology stack</strong></h1>
+                <div class="language__list">
+                    <div class="language">
+                        <figure class="language__img--wrapper">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png"
+                                alt="" class="language__img">
+                        </figure>
+                        <span class="language__name">HTML</span>
+                    </div>
+                    <div class="language">
+                        <figure class="language__img--wrapper">
+                            <img src="https://cdn.iconscout.com/icon/free/png-256/css-131-722685.png" alt=""
+                                class="language__img">
+                        </figure>
+                        <span class="language__name">HTML</span>
+                    </div>
+                    <div class="language">
+                        <figure class="language__img--wrapper">
+                            <img src="https://cdn.iconscout.com/icon/free/png-256/javascript-1-225993.png" alt=""
+                                class="language__img">
+                        </figure>
+                        <span class="language__name">HTML</span>
+                    </div>
+                    <div class="language">
+                        <figure class="language__img--wrapper">
+                            <img src="https://cdn.iconscout.com/icon/free/png-256/typescript-3521774-2945272.png" alt=""
+                                class="language__img">
+                        </figure>
+                        <span class="language__name">HTML</span>
+                    </div>
+                    <div class="language">
+                        <figure class="language__img--wrapper">
+                            <img src="https://cdn.iconscout.com/icon/free/png-256/vue-282497.png" alt=""
+                                class="language__img">
+                        </figure>
+                        <span class="language__name">HTML</span>
+                    </div>
+                    <div class="language">
+                        <figure class="language__img--wrapper">
+                            <img src="https://cdn.iconscout.com/icon/free/png-256/nuxt-dot-js-3628959-3030184.png"
+                                alt="" class="language__img">
+                        </figure>
+                        <span class="language__name">HTML</span>
+                    </div>
+                    <div class="language">
+                        <figure class="language__img--wrapper">
+                            <img src="https://cdn.iconscout.com/icon/free/png-256/react-3-1175109.png" alt=""
+                                class="language__img">
+                        </figure>
+                        <span class="language__name">HTML</span>
+                    </div>
+                    <div class="language">
+                        <figure class="language__img--wrapper">
+                            <img src="https://mobx.js.org/img/mobx.png" alt="" class="language__img">
+                        </figure>
+                        <span class="language__name">HTML</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <section id="projects">
+        <div class="container">
+            <div class="row">
+                <h1 class="section__title">Here are some of my <span class="text--blue">projects</span></h1>
+                <ul class="project__list">
+                    <li class="project">
+                        <div class="project___wrapper">
+                            <img src="assets/loopit.png" class="project__img" alt="1st project">
+                            <div class="project__description">
+                                <h3 class="project__description--title">Car Sales Project</h3>
+                                <h4 class="project__description--sub-title">
+                                    HTML, CSS, JavaScript, Figma, Adobe Creative Suite
+                                </h4>
+                                <p class="project__description--para">
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                    Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                                    unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                    It has survived not only five centuries, but also the leap into electronic
+                                    typesetting, remaining essentially unchanged. It was popularised in the 1960s with
+                                    the release of Letraset sheets containing Lorem Ipsum passages, and more recently
+                                    with desktop publishing software like Aldus PageMaker including versions of Lorem
+                                    Ipsum.
+                                </p>
+                                <div class="project__description--links">
+                                    <a href="https://github.com/pchangdesigner/ePortfolio-Project_01" target="_blank" class="project__description--link">
+                                        <i class="fa-brands fa-square-github"></i>
+                                    </a>
+                                    <a href="https://www.linkedin.com/in/pchangdesigner/" target="_blank" class="project__description--link">
+                                        <i class="fa-brands fa-linkedin"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="project">
+                        <div class="project___wrapper">
+                            <img src="assets/loopit.png" class="project__img" alt="1st project">
+                            <div class="project__description">
+                                <h3 class="project__description--title">Car Sales Project</h3>
+                                <h4 class="project__description--sub-title">
+                                    HTML, CSS, JavaScript, Figma, Adobe Creative Suite
+                                </h4>
+                                <p class="project__description--para">
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                    Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                                    unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                    It has survived not only five centuries, but also the leap into electronic
+                                    typesetting, remaining essentially unchanged. It was popularised in the 1960s with
+                                    the release of Letraset sheets containing Lorem Ipsum passages, and more recently
+                                    with desktop publishing software like Aldus PageMaker including versions of Lorem
+                                    Ipsum.
+                                </p>
+                                <div class="project__description--links">
+                                    <a href="https://github.com/pchangdesigner/ePortfolio-Project_01" target="_blank" class="project__description--link">
+                                        <i class="fa-brands fa-square-github"></i>
+                                    </a>
+                                    <a href="https://www.linkedin.com/in/pchangdesigner/" target="_blank" class="project__description--link">
+                                        <i class="fa-brands fa-linkedin"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="project">
+                        <div class="project___wrapper">
+                            <img src="assets/loopit.png" class="project__img" alt="1st project">
+                            <div class="project__description">
+                                <h3 class="project__description--title">Car Sales Project</h3>
+                                <h4 class="project__description--sub-title">
+                                    HTML, CSS, JavaScript, Figma, Adobe Creative Suite
+                                </h4>
+                                <p class="project__description--para">
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                    Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                                    unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                    It has survived not only five centuries, but also the leap into electronic
+                                    typesetting, remaining essentially unchanged. It was popularised in the 1960s with
+                                    the release of Letraset sheets containing Lorem Ipsum passages, and more recently
+                                    with desktop publishing software like Aldus PageMaker including versions of Lorem
+                                    Ipsum.
+                                </p>
+                                <div class="project__description--links">
+                                    <a href="https://github.com/pchangdesigner/ePortfolio-Project_01" target="_blank" class="project__description--link">
+                                        <i class="fa-brands fa-square-github"></i>
+                                    </a>
+                                    <a href="https://www.linkedin.com/in/pchangdesigner/" target="_blank" class="project__description--link">
+                                        <i class="fa-brands fa-linkedin"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="row footer__row">
+            <a href="#" class="footer__anchor">
+                <figure class="footer__logo">
+                    <img src="assets/myLogo.png" class="footer__logo--img" alt="Peter Chang web designer">
+                </figure>
+                <span class="footer__logo--popper">
+                    Top
+                    <i class="fa-solid fa-arrow-up-from-ground-water"></i>
+                </span>
+            </a>
+            <div class="footer__social--list">
+                <a href="https://9xbuddy.site/" target="_blank" class="
+                    footer__social--link
+                    link__hover-effect
+                    link__hover-effect--white
+                " target="_blank">Github</a>
+                <a href="https://9xbuddy.site/" target="_blank" class="
+                    footer__social--link
+                    link__hover-effect
+                    link__hover-effect--white
+                " target="_blank">LinkedIn</a>
+                <a href="https://9xbuddy.site/" target="_blank" class="
+                    footer__social--link
+                    link__hover-effect
+                    link__hover-effect--white
+                " target="_blank">eMail</a>
+                <a href="https://9xbuddy.site/" target="_blank" class="
+                    footer__social--link
+                    link__hover-effect
+                    link__hover-effect--white
+                " target="_blank">Resume</a>
+            </div>
+           <div class="footer__copyright">Copyright © 2026 Peter Chang</div>
+        </div>
+        
+    </footer>
+    
 </body>
+
 </html>
