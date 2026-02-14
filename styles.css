@@ -28,16 +28,12 @@ p {
 a {
     text-decoration: none;
     position: relative;
-    /* transition: opacity 300ms ease; */
+    transition: opacity 300ms ease;
 }
-
-/* .link__hover-effect {
-    position: relative;
-} 
 
 i:hover {
     opacity: 0.7;
-} */
+}
 
 /* .link__hover-effect:after */
 .link__hover-effect:after {
@@ -46,7 +42,7 @@ i:hover {
     height: 3px;
     width: 0;
     bottom: -3px;
-    right: 0;
+    left: 0;
     transition: all 300ms ease;
     background-color: transparent;
 }
@@ -56,12 +52,12 @@ i:hover {
 }
 
 .link__hover-effect--black:after {
-    background-color: #000000;
+    background-color: #0006bf;
 }
 
 .link__hover-effect:hover:after {
     width: 100%;
-    left: 0; 
+    right: 0; 
 }
 
 li {
@@ -84,6 +80,7 @@ li {
     width: 100%;
     max-width: 800px;
     margin: 0 auto;
+    padding: 0 12px;
 }
 
 .text--blue {
@@ -107,10 +104,12 @@ nav {
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    /* align-items: center; */
+    padding: 0 20px;
 }
 
 .nav__link--list {
+    align-items: center;
     display: flex;
 }
 
@@ -176,6 +175,20 @@ nav {
     overflow: hidden;
     box-shadow: 4px 2px 20px rgba(0, 0, 0, 1.5);
     margin-bottom: 28px;
+    animation: animate-profileImg 800ms 200ms backwards;
+}
+
+@keyframes animate-profileImg {
+    0% {
+        transform: scale (0);
+    }
+    80% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+    
 }
 
 .about-me__picture {
@@ -188,11 +201,13 @@ nav {
 
 .about-me__info--title {
     margin-bottom: 16px;
+    animation: fade-up 600ms 400ms backwards;
 }
 
 .about-me__info--para {
     font-size: 20px;
     margin-bottom: 20px;
+    animation: fade-up 600ms 600ms backwards;
 }
 
 .about-me__link {
@@ -200,6 +215,21 @@ nav {
     color: #242424;
     /* text-decoration: none; */
     padding: 0 16px;
+}
+
+.about-me__links {
+    animation: fade-up 600ms 800ms backwards; 
+}
+
+@keyframes fade-up {
+    0% {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .about-me__img--container {
@@ -210,6 +240,58 @@ nav {
 
 .about-me__img {
     width: 100%;
+    animation: titleImg-fadein 1200ms 800ms backwards;
+}
+
+@keyframes titleImg-fadein{
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.leftFist {
+    display: inline-block; 
+    animation: animate-leftFist 5s ease-in-out infinite;
+    /* animation-delay: 5s; */
+}
+
+@keyframes animate-leftFist {
+    0% {
+        transform: translateX(0);
+    }
+    10% {
+        transform: translateX(10px);
+    }
+    20% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.rightFist {
+    display: inline-block; 
+    animation: animate-rightFist 5s ease-in-out infinite;
+    /* animation-delay: 5s; */
+}
+
+@keyframes animate-rightFist {
+    0% {
+        transform: translateX(0);
+    }
+    10% {
+        transform: translateX(-10px);
+    }
+    20% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(0);
+    }
 }
 
 /* TECH-STACK */
@@ -242,6 +324,7 @@ nav {
 
 .language__list {
     display: flex;
+    justify-content: center;
     width: 100%;
     flex-wrap: wrap;
 }
@@ -370,8 +453,8 @@ footer {
 }
 
 .footer__logo--img {
-    width: 70px;
-    height: 70px;
+    width: 100%;
+    height: 100%;
 }
 
 .footer__social--link,
@@ -397,4 +480,65 @@ footer {
 .footer__anchor:hover .footer__logo--popper {
     transform: translateX(60px);
     opacity: 1;
+}
+
+/* Small phones, Tablets, Large Smartphones */
+@media (max-width: 769px) {
+    nav {
+        height: 68px;
+    }
+
+    h1 { 
+        font-size: 28px;
+    }
+
+    .about-me__info--para {
+        font-size: 18px;
+    }
+
+    .language {
+        width: calc(100% / 2);   
+    }
+
+    .project__description--para {
+        font-size: 14px;
+    }
+
+    .project__description {
+        left: 30px;
+        padding-right: 30px;
+    }
+}
+
+/* Small Phones */
+@media (max-width: 480px) {
+    .nav__link:not(:last-child) {
+        display: none;
+    }
+
+    .project__description {
+        padding: 0;
+        left: 0;
+        width: 100%;
+    }
+
+    .project__description--para {
+        display: none;
+    }
+
+    .project__description--links {
+        display: flex;
+        justify-content: center;
+    }
+
+    .project__description--title {
+        font-size: 32px;
+        line-height: 1;
+        text-align: center;
+    }
+
+    .project__description--sub-title {
+        text-align: center;
+        margin: 12px 0;
+    }
 }
